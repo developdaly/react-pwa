@@ -3,7 +3,9 @@ import Fold from "pawjs/src/components/fold";
 import ReactLogo from "src/resources/images/reactjs.svg";
 import SmallImage from "src/resources/images/mario-large.png?sizes=100w+200w+400w+800w&placeholder";
 import Picture from "pawjs/src/components/picture/picture";
-
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js');
+}
 export default class Home extends Component {
   render() {
     return (

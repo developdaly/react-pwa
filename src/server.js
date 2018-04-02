@@ -25,7 +25,6 @@ app.use((req, res, next) => {
   next();
 });
 
-
 /**
  * --- Your custom code END ---
  */
@@ -34,7 +33,14 @@ app.use(serverHooks);
 
 app.use((req, res, next) => {
   res.locals.wook.add_filter("paw_head", head => {
-    head.push(
+    // head.push(
+      // <script
+      //     dangerouslySetInnerHTML={{__html: `{
+      //       if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/service-worker.js'); }
+      //     }`}}
+      //   />
+      //   );
+        head.push(
       <script
         type="application/ld+json"
         key="atyantik-org"
