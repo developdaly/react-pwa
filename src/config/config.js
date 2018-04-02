@@ -11,8 +11,8 @@ export default {
     preload: false,
   },
   pwa: {
-    "name": "React Redux PWA Seo-ed",
-    "short_name": "RRPS",
+    "name": "Santander",
+    "short_name": "Santander",
     // Possible values ltr(left to right)/rtl(right to left)
     "dir": "ltr",
     
@@ -23,8 +23,8 @@ export default {
     // any, natural, landscape, landscape-primary, landscape-secondary, portrait, portrait-primary, portrait-secondary
     "orientation": "any",
     "start_url": "/",
-    "background_color": "#fff",
-    "theme_color": "#fff",
+    "background_color": "#ffffff",
+    "theme_color": "#ff0000",
     "display": "standalone",
     "description": "Boilerplate for react, redux with server-side rendering for SEO and support for progressive web application"
   },

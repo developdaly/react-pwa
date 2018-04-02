@@ -9,7 +9,7 @@ const routes = [
     layout: DefaultLayout,
     component: BlogListing,
     preLoadData: async ({ api }) => {
-      return api.fetch("https://www.atyantik.com/wp-json/wp/v2/posts", { swcache: 20000 });
+      return api.fetch("https://developdaly.com/wp-json/wp/v2/posts", { swcache: 20000 });
     },
   },
   {
@@ -18,7 +18,7 @@ const routes = [
     component: BlogPost,
     preLoadData: async ({match, api}) => {
       const { params } = match;
-      return api.fetch(`https://www.atyantik.com/wp-json/wp/v2/posts/${params.id}`, { swcache: 20000 });
+      return api.fetch(`https://developdaly.com/wp-json/wp/v2/posts/${params.id}`, { swcache: 20000 });
     },
   }
 ];
